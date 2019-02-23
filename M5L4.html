@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 4 Tina</title>
+</head>
+<body>
+<p>Setting a default to a function paramenter.</p>
+<p id="demo"></p>
+<script>
+	function myFunction(x, y){
+		if (y === undefined) {
+			y=0;
+		}
+		return x * y;
+	}
+	document.getElementById("demo").innerHTML = myFunction(4);
+</script>
+</body>
+</html>
